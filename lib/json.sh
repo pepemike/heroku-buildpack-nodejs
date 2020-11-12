@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 JQ="/usr/bin/jq"
-if ! test -f "$JQ"; then
-  curl -Ls https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 > "/usr/bin/jq" \
-      && chmod +x "/usr/bin/jq"
-fi
+# if ! test -f "$JQ"; then
+#   curl -Ls https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 > "/usr/bin/jq" \
+#       && chmod +x "/usr/bin/jq"
+# fi
 
 read_json() {
   local file="$1"
